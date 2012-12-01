@@ -1,4 +1,6 @@
 Tweetmap::Application.routes.draw do
+  root :to => 'finder#index'
+  resource :tweets
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,7 +14,6 @@ Tweetmap::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
   # Sample resource route with options:
   #   resources :products do
   #     member do
